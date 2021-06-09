@@ -2,6 +2,7 @@ import React from 'react';
 import { FaWhatsappSquare, FaPhoneSquare } from 'react-icons/fa';
 import Link from '../../components/Link';
 import Logo from '../../components/Logo';
+import MediaMatch from '../../components/MediaMatch';
 import MainHeader from '../../pattens/MainHeader';
 
 import * as S from './styles';
@@ -9,7 +10,9 @@ import * as S from './styles';
 const Initial: React.FC = () => {
   return (
     <S.Container>
-      <MainHeader />
+      <MediaMatch hideOnMobile>
+        <MainHeader />
+      </MediaMatch>
 
       <S.AddressPhoneInfo>
         <Logo />
