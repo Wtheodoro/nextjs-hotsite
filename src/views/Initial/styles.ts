@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 100vh;
-  padding: 2rem;
   background-image: url("/images/initial-background.jpg");
   background-size: cover;
 
@@ -11,10 +10,12 @@ export const Container = styled.div`
   align-items: center;
   flex-wrap: wrap;
 
-  @media (max-width: 769px) {
+  @media(max-width: 768px) {
+    height: 100%;
+    padding: 4rem 2rem;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
 `;
 
@@ -36,12 +37,29 @@ export const AddressPhoneInfo = styled.div`
     font-weight: 700;
     line-height: 24px;
   }
+
+  @media(max-width: 768px) {
+    /* margin-top: 3rem; */
+  }
+
+  @media (max-width: 426px) {
+    width: 100%;
+  }
 `;
 
 export const LinksWrapper = styled.div`
   width: 80%;
   display: flex;
   justify-content: space-evenly;
+
+  @media (max-width: 769px) {
+    flex-direction: column;
+    align-items: center;
+
+    a + a {
+      margin-top: 1rem;
+    }
+  }
 `;
 
 // Right Side on desktop
@@ -49,6 +67,9 @@ export const SimulatorWrapper = styled.div`
   width: 50rem;
   color: ${props => props.theme.colors.text};
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   > h1 {
     font-size: 4.2rem;
@@ -60,5 +81,13 @@ export const SimulatorWrapper = styled.div`
     font-weight: 300;
     line-height: 1.5em;
     margin-bottom: 2rem;
+  }
+
+  form {
+    margin-bottom: 3rem;
+  }
+
+  @media (max-width: 426px) {
+    width: 100%;
   }
 `

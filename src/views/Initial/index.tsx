@@ -3,6 +3,7 @@ import { FaWhatsappSquare, FaPhoneSquare } from 'react-icons/fa';
 import Link from '../../components/Link';
 import Logo from '../../components/Logo';
 import MediaMatch from '../../components/MediaMatch';
+import BudgetForm from '../../pattens/BudgetForm';
 import MainHeader from '../../pattens/MainHeader';
 
 import * as S from './styles';
@@ -38,10 +39,10 @@ const Initial: React.FC = () => {
         <h1>Venda seu carro sem burocracia, rápido e com segurança.</h1>
         <p>Receba uma proposta de venda imediata por um preço justo e pagamento á vista.</p>
 
-        <span>* Avaliação local <strong>sem custo</strong></span>
+        <BudgetForm />
+
+        <p>* Avaliação local <strong>sem custo</strong></p>
       </S.SimulatorWrapper>
-      
-      
     </S.Container>
   )
 }

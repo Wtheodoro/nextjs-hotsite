@@ -7,7 +7,7 @@ type ContainerProps = {
 
 const containerModifiers ={
   standard: () => css`
-    background: green;
+    background: ${props => props.theme.colors.tertiary};
   `,
   transparent: () => css`
     border: 1px solid ${props => props.theme.colors.white};
@@ -26,9 +26,11 @@ const containerModifiers ={
   `
 }
 
-export const Container = styled.div<ContainerProps>`
+export const Container = styled.button<ContainerProps>`
   padding: 1rem 2rem;
   color: ${props => props.theme.colors.text};
+  border: none;
+  cursor: pointer;
   border-radius: 5px;
   text-decoration: none;
 

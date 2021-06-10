@@ -5,6 +5,7 @@ export const Container = styled.div`
   height: 7rem;
   position: absolute;
   top: 0;
+  left: 0;
 `;
 
 export const Content = styled.div`

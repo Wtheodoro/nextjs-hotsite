@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
-import Initial from '../views/Initial'
-import Uncomplicated from '../views/Uncomplicated'
+import Initial from '../src/views/Initial'
+import Uncomplicated from '../src/views/Uncomplicated'
 
 const Home: React.FC = () => {
   return (
