@@ -5,13 +5,16 @@ import Title from '../../components/headings/Title';
 import { GrDocumentText } from 'react-icons/gr'
 import * as S from './styles';
 import StatsCard from '../../components/cards/StatsCard';
+import MediaMatch from '../../components/MediaMatch';
 
 const Uncomplicated: React.FC = () => {
   return (
     <S.Container>
       <h1 className="logo">Logo sem texto</h1>
-      <Title bigSize>Sem Complicação</Title>
-      <SubTitle>Há 46 anos atuamos na COMPRA DIRETA de carros.</SubTitle>
+      <MediaMatch hideOnMobileLessIpad>
+        <Title bigSize>Sem Complicação</Title>
+        <SubTitle>Há 46 anos atuamos na COMPRA DIRETA de carros.</SubTitle>
+      </MediaMatch>
       <p>Compramos seu carro ainda HOJE por um PREÇO JUSTO.</p>
       <p>Avaliação local SEM CUSTO, se preferir venha até nós.</p>
 
