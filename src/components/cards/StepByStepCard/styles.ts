@@ -8,11 +8,12 @@ export const Container = styled.div`
   text-align: start;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.26);
 
-  > h3, p {
+  > h3 {
     margin-bottom: 2rem;
   }
 
   > p {
+    margin-bottom: 3rem;
     color: ${props => props.theme.colors.semiBlack};
     font-size: 1.7rem;
     font-weight: 400;
@@ -30,4 +31,13 @@ export const LinkWrapper = styled.div`
   font-weight: 600;
   color: ${props => props.theme.colors.secondary};
   cursor: pointer;
+
+  span {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    font-size: 2rem;
+  }
 `

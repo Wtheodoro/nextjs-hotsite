@@ -5,7 +5,8 @@ export const Container = styled.div`
   height: 100vh;
   background-image: url("/images/initial-background.jpg");
   background-size: cover;
-
+  /* margin equivalente ao h do mainHeader */
+  padding-top: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -31,4 +31,13 @@ export const LinkWrapper = styled.div`
   font-weight: 600;
   color: ${props => props.theme.colors.secondary};
   cursor: pointer;
+  
+  span {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    font-size: 2rem;
+  }  
 `

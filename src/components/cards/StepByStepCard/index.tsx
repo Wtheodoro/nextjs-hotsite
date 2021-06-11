@@ -3,6 +3,7 @@ import SubTitle from '../../headings/SubTitle';
 import Image from 'next/image'
 import * as S from './styles';
 import MediaMatch from '../../MediaMatch';
+import { MdNavigateNext } from 'react-icons/md';
 
 interface StepCardProps {
   title: string
@@ -33,7 +34,7 @@ const StepByStepCard: React.FC<StepCardProps> = ({
       <p>{children}</p>
 
       <S.LinkWrapper>
-        <span onClick={()=>alert("clickou")}>SAIBA MAIS</span>
+        <span onClick={()=>alert("clickou")}>SAIBA MAIS <MdNavigateNext/></span>
       </S.LinkWrapper>
     </S.Container>
   )

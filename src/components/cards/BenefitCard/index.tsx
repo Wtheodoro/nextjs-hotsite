@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdNavigateNext } from 'react-icons/md'
 import * as S from './styles';
 
 interface BenefitCardProps {
@@ -18,7 +19,7 @@ const BenefitCard: React.FC<BenefitCardProps> = ({ icon, title, children }) => {
       <p>{children}</p>
 
       <S.LinkWrapper>
-        <span onClick={()=>alert("clickou")}>SAIBA MAIS</span>
+        <span onClick={()=>alert("clickou")}>SAIBA MAIS <MdNavigateNext/></span>
       </S.LinkWrapper>
     </S.Container>
   )
