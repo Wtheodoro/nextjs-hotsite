@@ -56,7 +56,6 @@ const BudgetForm: React.FC = () => {
             placeHolder="Quilometragem - KM"
             type="number"
             register={register}
-            required
           />
 
           <InputText 

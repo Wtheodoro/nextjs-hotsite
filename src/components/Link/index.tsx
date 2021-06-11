@@ -16,6 +16,7 @@ const Link: React.FC<LinkProps> = ({ children, color, icon, iconColor, link}) =>
       icon={!!icon}
       iconColor={iconColor}
       href={link}
+      target="blank"
     >
       {icon} {children}
     </S.Container>

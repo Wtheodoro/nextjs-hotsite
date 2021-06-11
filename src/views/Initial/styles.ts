@@ -53,9 +53,10 @@ export const LinksWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
 
-  @media (max-width: 769px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 
     a + a {
       margin-top: 1rem;

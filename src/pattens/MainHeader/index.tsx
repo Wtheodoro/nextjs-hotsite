@@ -19,7 +19,7 @@ const MainHeader: React.FC = () => {
             color="#FFF"
             iconColor='green'
           >
-            (19) 314159265
+            (19) 97422-9726
           </Link>
           <Link 
             link="https://www.youtube.com/"
@@ -27,7 +27,7 @@ const MainHeader: React.FC = () => {
             color="#FFF"
             iconColor='green'
           >
-            (19) 057721566
+            (19) 97422-9726
           </Link>
         </S.LinksWrapper>
 

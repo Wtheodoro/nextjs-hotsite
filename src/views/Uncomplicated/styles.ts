@@ -36,4 +36,8 @@ export const CardsWrapper = styled.div`
   > div {
     margin: 2rem 0;
   }
+
+  @media(max-width: 425px){
+    flex-direction: column;
+  }
 `

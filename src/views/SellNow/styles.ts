@@ -1,20 +1,26 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  height: 80vh;
   background-image: url("/images/key-background.jpg");
   background-size: cover;
-  padding: 10rem 2rem;
+  padding: 4rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media(max-width: 425px) {
+    height: auto;
     padding: 4rem 2rem;
   }
 `;
 
 export const Content = styled.div`
   width: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   > h3 {
     margin-bottom: 2rem;

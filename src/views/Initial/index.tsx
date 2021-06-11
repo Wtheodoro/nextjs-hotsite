@@ -24,13 +24,13 @@ const Initial: React.FC = () => {
             link="https://www.youtube.com/"
             icon={<FaWhatsappSquare />}
           >
-            (19) 314159265
+            (19) 97422-9726
           </Link>
           <Link 
             link="https://www.youtube.com/"
             icon={<FaPhoneSquare />}
           >
-            (19) 057721566
+            (19) 97422-9726
           </Link>
         </S.LinksWrapper>
       </S.AddressPhoneInfo>
