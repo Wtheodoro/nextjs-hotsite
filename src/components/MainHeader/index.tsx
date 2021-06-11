@@ -1,9 +1,9 @@
 import React from 'react';
-import Link from '../../components/Link';
-import Logo from '../../components/Logo';
+import Link from '../Link';
+import Logo from '../Logo';
 import { FaWhatsapp, FaPhone } from 'react-icons/fa'
 import * as S from './styles';
-import Button from '../../components/Button';
+import Button from '../Button';
 
 const MainHeader: React.FC = () => {
   return (

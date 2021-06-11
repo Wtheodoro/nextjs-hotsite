@@ -1,8 +1,8 @@
 import React from 'react';
 import * as S from './styles';
 import { useForm, SubmitHandler } from "react-hook-form";
-import Button from '../../components/Button';
-import InputText from '../../components/Input';
+import Button from '../Button';
+import InputText from '../Input';
 
 interface Inputs {
   manufacturer: string

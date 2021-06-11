@@ -3,8 +3,8 @@ import { FaWhatsappSquare, FaPhoneSquare } from 'react-icons/fa';
 import Link from '../../components/Link';
 import Logo from '../../components/Logo';
 import MediaMatch from '../../components/MediaMatch';
-import BudgetForm from '../../pattens/BudgetForm';
-import MainHeader from '../../pattens/MainHeader';
+import BudgetForm from '../../components/BudgetForm';
+import MainHeader from '../../components/MainHeader';
 
 import * as S from './styles';
 

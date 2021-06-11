@@ -6,11 +6,16 @@ interface BenefitCardProps {
   icon: React.ReactNode
   title: string
   children: string
+  popup?: string
 }
 
-const BenefitCard: React.FC<BenefitCardProps> = ({ icon, title, children }) => {
+const BenefitCard: React.FC<BenefitCardProps> = ({ icon, title, children, popup }) => {
   return (
     <S.Container>
+      <div className="popup">
+        <p>{popup}</p>
+      </div>
+
       <S.IconWrapper>
         {icon}
       </S.IconWrapper>

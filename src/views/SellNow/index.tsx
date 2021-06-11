@@ -1,6 +1,6 @@
 import React from 'react';
 import SubTitle from '../../components/headings/SubTitle';
-import BudgetForm from '../../pattens/BudgetForm';
+import BudgetForm from '../../components/BudgetForm';
 import * as S from './styles';
 
 const SellNow: React.FC = () => {

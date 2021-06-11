@@ -21,6 +21,7 @@ const Uncomplicated: React.FC = () => {
       <S.CardsWrapper>
         <BenefitCard
           title="Processo Rápido"
+          popup="Aceleramos a sua venda"
           icon={<GrDocumentText />}
         >
           Avaliamos e enviamos a proposta de compra em até duas horas com pagamento á vista.
@@ -28,6 +29,7 @@ const Uncomplicated: React.FC = () => {
 
         <BenefitCard
           title="Sem Burocracia"
+          popup="Regularizamos a documentação"
           icon={<GrDocumentText />}
         >
           Cuidamos de toda a transferência junto á DETRANs e cartórios
@@ -35,6 +37,7 @@ const Uncomplicated: React.FC = () => {
 
         <BenefitCard
           title="Seguro"
+          popup="Pagamento na sua conta"
           icon={<GrDocumentText />}
         >
           Você escolhe o processo de avaliação, venha até nós  ou iremos até você.
