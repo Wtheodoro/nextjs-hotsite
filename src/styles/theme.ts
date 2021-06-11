@@ -5,7 +5,8 @@ const theme = {
     tertiary: '#F5A429',
 
     black: '#1C1C1C',
-    white: '#F9F9F9',
+    semiBlack: '#444444',
+    white: '#FFF',
 
     background: '#F8F9FA',
     text: '#F9F9F9'

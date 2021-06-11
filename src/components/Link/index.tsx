@@ -1,5 +1,4 @@
 import React from 'react';
-import { IconType } from 'react-icons';
 import * as S from './styles';
 
 interface LinkProps {

@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Initial from '../src/views/Initial'
 import Uncomplicated from '../src/views/Uncomplicated'
 import HowItWorks from '../src/views/HowItWorks'
+import SellNow from '../src/views/SellNow'
+import About from '../src/views/About'
 
 const Home: React.FC = () => {
   return (
@@ -15,6 +17,8 @@ const Home: React.FC = () => {
         <Initial />
         <Uncomplicated />
         <HowItWorks />
+        <SellNow />
+        <About />
       </main>
     </>
   )

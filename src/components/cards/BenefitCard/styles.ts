@@ -30,4 +30,5 @@ export const LinkWrapper = styled.div`
   font-size: 1.4rem;
   font-weight: 600;
   color: ${props => props.theme.colors.secondary};
+  cursor: pointer;
 `
