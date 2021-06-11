@@ -26,7 +26,7 @@ export const Container = styled.div`
 `;
 
 export const CardsWrapper = styled.div`
-  width: 100%;
+  width: min(100%, 114rem);
   margin-top: 3rem;
   display: flex;
   flex-wrap: wrap;
