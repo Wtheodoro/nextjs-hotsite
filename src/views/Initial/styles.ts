@@ -93,3 +93,6 @@ export const SimulatorWrapper = styled.div`
     width: 100%;
   }
 `
+export const FormWrapper = styled.div`
+  width: 100%;
+`

@@ -20,7 +20,6 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
   > h3 {
     margin-bottom: 2rem;
@@ -36,7 +35,6 @@ export const Content = styled.div`
 `;
 
 export const SimulatorWrapper = styled.div`
-  width: 40rem;
   color: ${props => props.theme.colors.text};
   text-align: center;
   display: flex;
@@ -50,4 +48,7 @@ export const SimulatorWrapper = styled.div`
   @media (max-width: 426px) {
     width: 100%;
   }
+`
+export const FormWrapper = styled.div`
+  width: 100%;
 `

@@ -39,7 +39,9 @@ const Initial: React.FC = () => {
         <h1>Venda seu carro sem burocracia, rápido e com segurança.</h1>
         <p>Receba uma proposta de venda imediata por um preço justo e pagamento á vista.</p>
 
-        <BudgetForm />
+        <S.FormWrapper>
+          <BudgetForm />
+        </S.FormWrapper>
 
         <p>* Avaliação local <strong>sem custo</strong></p>
       </S.SimulatorWrapper>

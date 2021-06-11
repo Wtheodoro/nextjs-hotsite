@@ -11,7 +11,9 @@ const SellNow: React.FC = () => {
         <p>Entre em contato conosco preenchendo os campos abaixo para um atendimento imediato.</p>
 
         <S.SimulatorWrapper>
-         <BudgetForm />
+          <S.FormWrapper>
+            <BudgetForm />
+          </S.FormWrapper>
         </S.SimulatorWrapper>
       </S.Content>
     </S.Container>
