@@ -1,4 +1,24 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const opaticyAnimation = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`
+
+const cardAnimation = keyframes`
+  0%{
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`
 
 interface ContainerProps {
   isOpen: boolean
@@ -6,6 +26,8 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   display: ${props => props.isOpen ? 'block' : 'none'};
+  animation: ${opaticyAnimation} 0.5s ease;
+  position: relative;
 `
 
 export const TransparentBackground = styled.div`
@@ -33,6 +55,8 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  animation: ${cardAnimation} 0.6s ease;
+
 
   > p {
     font-size: 2.4rem;
