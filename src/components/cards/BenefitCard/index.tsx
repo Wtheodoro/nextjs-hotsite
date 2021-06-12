@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdNavigateNext } from 'react-icons/md'
+import { useHelpPopUp } from '../../../hook/HelpPopUpContext';
 import * as S from './styles';
 
 interface BenefitCardProps {
@@ -9,7 +10,15 @@ interface BenefitCardProps {
   popup?: string
 }
 
-const BenefitCard: React.FC<BenefitCardProps> = ({ icon, title, children, popup }) => {
+const BenefitCard: React.FC<BenefitCardProps> = ({ 
+  icon,
+  title,
+  children,
+  popup
+}) => {
+  
+  const { openPopUp } = useHelpPopUp()
+
   return (
     <S.Container>
       <div className="popup">
@@ -24,7 +33,7 @@ const BenefitCard: React.FC<BenefitCardProps> = ({ icon, title, children, popup 
       <p>{children}</p>
 
       <S.LinkWrapper>
-        <span onClick={()=>alert("clickou")}>SAIBA MAIS <MdNavigateNext/></span>
+        <span onClick={openPopUp}>SAIBA MAIS <MdNavigateNext/></span>
       </S.LinkWrapper>
     </S.Container>
   )

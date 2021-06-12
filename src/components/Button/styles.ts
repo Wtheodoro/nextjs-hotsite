@@ -3,7 +3,7 @@ import { ButtonProps } from '.';
 
 type ContainerProps = {
   hasIcon: boolean
-} & Pick<ButtonProps , 'type' | 'fullWidth'>
+} & Pick<ButtonProps , 'type' | 'fullWidth' | 'color'>
 
 const containerModifiers ={
   standard: () => css`
@@ -37,4 +37,6 @@ export const Container = styled.button<ContainerProps>`
   ${props => !!props.type && containerModifiers[props.type]}
   ${props =>!!props.fullWidth && containerModifiers.fullWidth()}
   ${props => !!props.hasIcon && containerModifiers.withIcon()}
+
+  background-color: ${props => props.color ? props.color : ''};
 `;

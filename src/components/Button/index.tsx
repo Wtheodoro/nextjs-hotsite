@@ -8,6 +8,7 @@ type ButtonTypes =
 export type ButtonProps = {
   children?: React.ReactNode
   type?: 'standard' | 'transparent'
+  color?: string
   fullWidth?: boolean
   icon?: React.ReactNode
   as?: React.ElementType
@@ -16,11 +17,12 @@ export type ButtonProps = {
 const Button: React.FC<ButtonProps> = ({
   children,
   type = 'standard',
+  color,
   icon,
   ...props
 }) => {
   return (
-    <S.Container type={type} hasIcon={!!icon} {...props}>
+    <S.Container type={type} hasIcon={!!icon} color={color} {...props} target="blank">
       {!!icon && icon}
       {!!children && <span>{children}</span>}
     </S.Container>

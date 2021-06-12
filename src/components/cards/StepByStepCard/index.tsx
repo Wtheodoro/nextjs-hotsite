@@ -4,6 +4,7 @@ import Image from 'next/image'
 import * as S from './styles';
 import MediaMatch from '../../MediaMatch';
 import { MdNavigateNext } from 'react-icons/md';
+import { useHelpPopUp } from '../../../hook/HelpPopUpContext';
 
 interface StepCardProps {
   title: string
@@ -15,6 +16,9 @@ interface StepCardProps {
 const StepByStepCard: React.FC<StepCardProps> = ({
   title, children, imgLink, imgAlt
 }) => {
+
+  const { openPopUp } = useHelpPopUp()
+
   return (
     <S.Container>
       <MediaMatch hideOnMobileLessIpad>
@@ -34,7 +38,7 @@ const StepByStepCard: React.FC<StepCardProps> = ({
       <p>{children}</p>
 
       <S.LinkWrapper>
-        <span onClick={()=>alert("clickou")}>SAIBA MAIS <MdNavigateNext/></span>
+        <span onClick={openPopUp}>SAIBA MAIS <MdNavigateNext/></span>
       </S.LinkWrapper>
     </S.Container>
   )
