@@ -47,7 +47,13 @@ const About: React.FC = () => {
         <Link link="https://www.youtube.com/">Localização</Link>
       </div>
 
-      <p className="adress">Av. Marechal Carmona, 532 - Campinas - São Paulo - SP</p>
+      <Link 
+        link="https://www.google.com.br/maps/place/Av.+Marechal+Carmona,+532+-+Vila+S%C3%A3o+Jorge,+Campinas+-+SP,+13041-311/@-22.9192526,-47.0622773,17z/data=!3m1!4b1!4m5!3m4!1s0x94c8c8d29cd914bb:0xfa3aa7053c423d14!8m2!3d-22.9192576!4d-47.0600886"
+      >
+        <p className="adress">
+          Av. Marechal Carmona, 532 - Campinas - São Paulo - SP
+        </p>
+      </Link>
     </S.Container>
   )
 }
