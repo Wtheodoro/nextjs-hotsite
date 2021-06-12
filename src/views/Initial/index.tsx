@@ -5,7 +5,6 @@ import Logo from '../../components/Logo';
 import MediaMatch from '../../components/MediaMatch';
 import BudgetForm from '../../components/BudgetForm';
 import MainHeader from '../../components/MainHeader';
-
 import * as S from './styles';
 
 const Initial: React.FC = () => {
@@ -21,13 +20,13 @@ const Initial: React.FC = () => {
 
         <S.LinksWrapper>
           <Link 
-            link="https://www.youtube.com/"
+            link="https://api.whatsapp.com/send?phone=5519974229726"
             icon={<FaWhatsappSquare />}
           >
             (19) 97422-9726
           </Link>
           <Link 
-            link="https://www.youtube.com/"
+            link="tel:5519974229726"
             icon={<FaPhoneSquare />}
           >
             (19) 97422-9726

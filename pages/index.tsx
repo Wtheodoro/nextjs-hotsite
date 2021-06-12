@@ -5,6 +5,7 @@ import Uncomplicated from '../src/views/Uncomplicated'
 import HowItWorks from '../src/views/HowItWorks'
 import SellNow from '../src/views/SellNow'
 import About from '../src/views/About'
+import WhatsappFixed from '../src/components/SVGs/WhatsappFixed'
 
 const Home: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
         <HowItWorks />
         <SellNow />
         <About />
+        <WhatsappFixed />
       </main>
     </>
   )

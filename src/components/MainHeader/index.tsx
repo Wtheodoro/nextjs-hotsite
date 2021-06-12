@@ -14,7 +14,7 @@ const MainHeader: React.FC = () => {
 
         <S.LinksWrapper>
           <Link 
-            link="https://www.youtube.com/"
+            link="https://api.whatsapp.com/send?phone=5519974229726"
             icon={<FaWhatsapp />}
             color="#FFF"
             iconColor='green'
@@ -22,7 +22,7 @@ const MainHeader: React.FC = () => {
             (19) 97422-9726
           </Link>
           <Link 
-            link="https://www.youtube.com/"
+            link="tel:5519974229726"
             icon={<FaPhone />}
             color="#FFF"
             iconColor='green'

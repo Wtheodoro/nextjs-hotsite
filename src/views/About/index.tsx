@@ -16,7 +16,7 @@ const About: React.FC = () => {
       <div className="divisor" />
 
       <Link 
-        link="https://www.youtube.com/"
+        link="mailto:contato@peixebayaku.com.br"
         icon={<HiOutlineMailOpen />}
         iconColor="#6EC1E4"
       >
@@ -25,14 +25,14 @@ const About: React.FC = () => {
 
       <div className="phoneContact">
         <Link 
-          link="https://www.youtube.com/"
+          link="https://api.whatsapp.com/send?phone=5519974229726"
           icon={<FaWhatsapp />}
           iconColor="#6EC1E4"
         >
           (19) 97422-9726
         </Link>
         <Link 
-          link="https://www.youtube.com/"
+          link="tel:5519974229726"
           icon={<FaPhone />}
           iconColor="#6EC1E4"
         >
