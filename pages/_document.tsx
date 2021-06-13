@@ -41,6 +41,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="icon" href="/icon-compramos-seu-carro.ico" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <body>
           <Main />

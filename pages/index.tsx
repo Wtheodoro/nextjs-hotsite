@@ -13,6 +13,8 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Compra e venda de carros usados e semi novos em Campinas, Valinhos, Paulínia, Hortoândia, Sumaré e região." />
         <title>André Veículos</title>
       </Head>
 
